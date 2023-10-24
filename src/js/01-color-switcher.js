@@ -10,7 +10,7 @@ stopBtn.addEventListener('click', stopChanging);
 let changeId;
 
 function changeColor() {
-  background.style.backgroundColor = '#337763';
+  background.style.backgroundColor = getRandomHexColor();
   startBtn.disabled = true;
   stopBtn.disabled = false;
   changeId = setInterval(() => {
