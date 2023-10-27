@@ -1,4 +1,4 @@
-import { getRandomHexColor } from './random-color';
+import { getRandomHexColor } from './helper.js';
 
 const background = document.querySelector('body');
 const startBtn = document.querySelector('button[data-start]');
