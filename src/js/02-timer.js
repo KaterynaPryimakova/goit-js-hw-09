@@ -42,7 +42,8 @@ function runTime() {
     const convertDate = convertMs(currentDate);
 
     countDays.textContent = addLeadingZero(convertDate.days);
-    countHours.textContent = addLeadingZero(convertDate.hours);
+    renderDate(countHours, convertDate.hours);
+    // countHours.textContent = addLeadingZero(convertDate.hours);
     countMinutes.textContent = addLeadingZero(convertDate.minutes);
     countSeconds.textContent = addLeadingZero(convertDate.seconds);
 
@@ -50,4 +51,7 @@ function runTime() {
       clearInterval(intervalId);
     }
   }, 1000);
+}
+function renderDate(element, number) {
+  element.textContent = addLeadingZero(number);
 }
